@@ -14,29 +14,39 @@
 </head>
 <body class="w-full flex flex-col items-center justify-center overflow-x-hidden">
     
-    <aside class="py-8 right-10 text-2xl fixed flex items-center justify-between flex-col text-gray-100">
+    <aside class="py-8 right-10 text-2xl fixed hidden md:flex items-center justify-between flex-col text-gray-100">
         
         <!-- <a href="#" class="hover:opacity-60 opacity-80 size-6 invert"><img src="assets/img/icons/theme.webp" alt=""></a> -->
 
         <nav class="flex items-center justify-center flex-col gap-12">
-            <a href="#" class="hover:opacity-60 opacity-80 size-8 invert"><img src="assets/img/icons/linkedin.jpg" alt=""></a>
-            <a href="#" class="hover:opacity-60 opacity-80 size-6 invert"><img src="assets/img/icons/github.svg" alt=""></a>
+            <a href="#" class="hover:opacity-60 opacity-80 size-6 invert"><img src="assets/img/icons/whatsapp.png" alt=""></a>
+            <a href="#" class="hover:opacity-60 opacity-80 size-6 invert"><img src="assets/img/icons/Icons.png" alt=""></a>
             <a href="#" class="hover:opacity-60 opacity-80 size-6 invert"><img src="assets/img/icons/gmail.png" alt=""></a>
         </nav>
 
         <!-- <a href="#" class="hover:opacity-60 opacity-80 size-6 invert"><img src="assets/img/icons/contact.png" alt=""></a> -->
     </aside>
 
-    <main class="py-8 w-8/12 h-screen flex items-center justify-start flex-col mb-8">
+    <main class="py-8 w-11/12 md:w-8/12 h-screen flex items-center justify-start flex-col mb-8">
 
-        <header class="w-full h-20 mb-36 flex items-center justify-center">
-            <div class="content w-8/12 flex items-center justify-between">
+        <header class="md:hidden flex w-9/12 h-20 mb-36 items-center justify-between">
+            <div class="flex items-center justify-center gap-2">
+                <h2 class="font-onest font-bold text-gray-300 text-3xl">J. <span class="text-blue-300">Leal</span></h2>
+            </div>
 
-                <figure class="w-5/12 flex items-center justify-start">
-                    <img src="assets/img/logo_transparent.png" alt="" class="opacity-90 w-12 invert">
-                </figure>
+            <button class="text-2xl text-white">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </header>
 
-                <nav class="flex items-center justify-center gap-8 font-onest text-lg text-gray-300">
+        <header class="hidden md:flex w-full h-20 mb-36 items-center justify-center">
+            <div class="content w-9/12 flex items-center justify-between">
+
+                <div class="flex items-center justify-center gap-2">
+                    <h2 class="font-onest font-bold text-gray-300 text-3xl">Joaquin<span class="text-blue-300">Leal</span></h2>
+                </div>
+
+                <nav class="flex items-center justify-center gap-x-8 font-onest text-lg text-gray-300">
                     <a href="#" class="hover:text-white">Proyectos</a>
                     <a href="#" class="hover:text-white">Sobre mi</a>
                     <a href="#" class="hover:text-white">Contacto</a>
@@ -45,19 +55,19 @@
         </header>
 
         <section class="flex items-center justify-between w-full">
-            <div class="flex items-start justify-start flex-col w-10/12 h-[75vh]">
+            <div class="flex items-start justify-start flex-col w-11/12 lg:w-10/12 h-[75vh]">
                 <figure class="w-5/12 flex items-center justify-start mb-4">
-                    <img src="assets/img/logo.jpg" alt="invert" class="w-16 rounded-full">
+                    <img src="assets/img/Joaco.png" alt="invert" class="w-20 rounded-full">
                 </figure>
 
-                <p class="font-onest text-2xl font-bold mb-2 text-gray-200">👋 Hola! Mi nombre es Matias Moreira y soy</p>
-                <h1 class="font-poppins text-6xl font-black text-gray-50 mb-2">Desarrollador Frontend</h1>
-                <p class="mb-4 text-xl max-w-xl font-onest text-gray-400">
-                    +1 año de experiencia como estudiante tech. 
-                    <span class="text-blue-300">Recibido en Bachillerato Informatico</span>, 
-                    <span class="text-cyan-200">De Montevideo, Uruguay.</span>
+                <p class="hidden lg:block font-onest text-md lg:text-2xl font-bold  text-gray-300">👋 Hola! Mi nombre es <span class="text-blue-300">Joaquin Leal</span> y soy</p>
+                <p class="font-onest block lg:hidden text-md lg:text-2xl font-bold  text-gray-300">👋 Mi nombre es <span class="text-blue-300">Joaquin Leal</span> y soy</p>
+                <h1 class="font-poppins text-5xl lg:text-6xl font-black text-gray-50 mb-2">Fotografo Profesional</h1>
+                <p class="mb-4 text-md lg:text-xl max-w-xl font-onest text-gray-400">
+                    +1 año de experiencia como fotografo profesional. 
+                    <span class="text-blue-300">Certificado en La Paz con Lorem Ipsum</span>.
                 </p>
-
+                <span class="bg-white/5 border dark:border-white/10 border-gray-400 rounded-full flex justify-center items-center gap-x-2 py-1 px-2 md:py-2 md:px-4 text-xs md:text-base text-black/70 dark:text-white/50" rel="noopener noreferrer"><i class="fa-solid fa-location-dot"></i> Montevideo, Uruguay</span>
                 <div class="flex items-center justify-start gap-4 w-10/12">
                     
                 </div>
@@ -67,63 +77,79 @@
         <section class="flex flex-col items-start justify-center w-full text-white mb-32">
             <div class="flex items-center gap-2 mb-8">
                 <i class="text-xl fa-solid fa-toolbox"></i>
-                <h2 class="font-onest font-bold text-gray-300 text-3xl">Proyectos Trabajados</h2>
+                <h2 class="font-onest font-bold text-gray-300 text-xl lg:text-3xl">Proyectos Trabajados</h2>
             </div>
 
             <!-- Bento Grid Proyectos -->
-            <div class="bento__container w-full grid grid-cols-4 grid-rows-3 h-screen gap-4">
+            <div class="bento__container w-full grid lg:grid-cols-3 gap-4 mb-4">
 
-                <article class="rounded-lg w-full h-full row-span-2"></article>
+                <div class="grid gap-4 mb-12">
+                    <article class="rounded-lg w-full h-96 row-span-2 overflow-hidden"><img src="assets/img/fotos/2.jpg" class="bg-center" alt=""></article>
+                    <article class="rounded-lg w-full h-96 row-span-2 overflow-hidden"><img src="assets/img/fotos/5.jpg" class="bg-center" alt=""></article>
+                    <article class="rounded-lg w-full h-96 row-span-2 overflow-hidden"><img src="assets/img/fotos/1.jpg" class="bg-center" alt=""></article>
+                </div>
+                
+                <div class="hidden lg:grid gap-4 mt-12">
+                    <article class="rounded-lg w-full h-96 row-span-2 overflow-hidden"><img src="assets/img/fotos/1.jpg" class="bg-center" alt=""></article>
+                    <article class="rounded-lg w-full h-96 row-span-2 overflow-hidden"><img src="assets/img/fotos/4.jpg" class="bg-center" alt=""></article>
+                    <article class="rounded-lg w-full h-96 row-span-2 overflow-hidden"><img src="assets/img/fotos/7.jpg" class="bg-center" alt=""></article>
+                </div>
 
-                <article class="rounded-lg w-full h-full col-span-2"></article>
+                <div class="hidden lg:grid gap-4 mb-12">
+                    <article class="rounded-lg w-full h-96 row-span-2 overflow-hidden"><img src="assets/img/fotos/3.jpg" class="bg-center" alt=""></article>
+                    <article class="rounded-lg w-full h-96 row-span-2 overflow-hidden"><img src="assets/img/fotos/6.jpg" class="bg-center" alt=""></article>
+                    <article class="rounded-lg w-full h-96 row-span-2 overflow-hidden"><img src="assets/img/fotos/9.jpg" class="bg-center" alt=""></article>
+                </div>
 
-                <article class="rounded-lg w-full h-full"></article>
-                
-                <article class="rounded-lg w-full h-full col-span-2"></article>
-                
-                <article class="rounded-lg w-full h-full row-span-2"></article>
-                
-                <article class="rounded-lg w-full h-full col-span-2"></article>
-                
-                <article class="rounded-lg w-full h-full"></article>
 
             </div>
+
+            <a href="#" class="m-auto bg-white/5 border dark:border-white/10 border-gray-400 rounded-full flex justify-center items-center gap-x-2 py-1 px-2 md:py-2 md:px-4 text-md md:text-lg text-black/70 dark:text-white/50 transition hover:scale-110 hover:bg-white/10" rel="noopener noreferrer">Ver Mas <i class="fa-solid fa-chevron-up fa-rotate-90"></i></a>
         </section>
 
         <section class="flex flex-col items-start justify-start w-full text-white min-h-screen mb-8">
             <div class="flex items-center gap-2 mb-8">
                 <i class="text-xl fa-regular fa-circle-question"></i>
-                <h2 class="font-onest font-bold text-gray-300 text-3xl">Informacion Extra</h2>
+                <h2 class="font-onest font-bold text-gray-300 text-xl lg:text-3xl">Informacion Extra</h2>
             </div>
             
-            <section class="flex items-center justify-between w-full gap-8 h-screen">
+            <section class="flex flex-col lg:flex-row items-start justify-center w-full gap-8 h-screen">
                 
-                <div class="w-3/6 flex items-start justify-start bg-red-700 h-full">
+                <div class="w-3/6 flex items-start justify-start h-full">
                     
-                    <div class="flex items-center gap-2 mb-8">
+                    <div class="flex items-center gap-2 mb-8 mt-16">
                         <i class="text-xl fa-solid fa-user"></i>
-                        <h2 class="font-onest font-bold text-gray-50 text-2xl">Sobre mi</h2>
+                        <h2 class="font-onest font-bold text-gray-50 text-md lg:text-2xl">Sobre mi</h2>
                     </div>
 
-                </div>
 
-                <div class="w-3/6 flex flex-col items-start justify-start h-full">
-
-                    <div class="flex items-center gap-2 mb-8">
-                        <i class="text-xl fa-solid fa-microchip"></i>
-                        <h2 class="font-onest font-bold text-gray-50 text-2xl">Tecnologias</h2>
-                    </div>
-
-                    <section class="flex items-center justify-start text-4xl gap-4 text-[rgba(73,146,243,0.466)] w-5/6 flex-wrap">
-
-                        <article class="size-20 rounded-md border-2 grid place-content-center"><i class="fa-brands fa-html5"></i></article>
-                        <article class="size-20 rounded-md border-2 grid place-content-center"><i class="fa-brands fa-css3-alt"></i></article>
-                        <article class="size-20 rounded-md border-2 grid place-content-center"><i class="fa-brands fa-js"></i></article>
-                        <article class="size-20 rounded-md border-2 grid place-content-center"><i class="fa-brands fa-php"></i></article>
-                        <article class="size-20 rounded-md border-2 grid place-content-center"><i class="fa-brands fa-git"></i></article>
-                        <article class="size-20 rounded-md border-2 grid place-content-center"><i class="rotate-45 fa-brands fa-hotjar"></i></article>
+                    <section class="h-96">
 
                     </section>
+                </div>
+
+                <div class="w-full lg:w-3/6 flex flex-row lg:flex-col items-start justify-between lg:justify-start w-full h-screen">
+
+                    <div class="flex items-start justify-start w-full">
+                        <div class="flex items-center gap-2 mb-8 w-full">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <h2 class="font-onest font-bold text-gray-50 text-md lg:text-2xl">Certificaciones</h2>
+                        </div>
+
+                        <section class="flex items-center h-64 justify-start text-4xl gap-4 text-[rgba(73,146,243,0.466)] w-5/6 flex-wrap">
+                        </section>
+                    </div>
+
+                    <div class="flex items-start justify-start w-full">
+                        <div class="flex items-center gap-2 mb-8 w-full">
+                            <i class="fa-regular fa-face-smile-wink"></i>
+                            <h2 class="font-onest font-bold text-gray-50 text-md lg:text-2xl">Hobbys</h2>
+                        </div>
+
+                        <section class="flex items-center h-96 justify-start text-4xl gap-4 text-[rgba(73,146,243,0.466)] w-5/6 flex-wrap">
+                        </section>
+                    </div>
+                
                 </div>
             
             </section>
