@@ -34,3 +34,8 @@ article{
     /* border: 2px solid rgba(120,119,198,0.3); */
 }
 
+select{
+    background: transparent;
+    border: 1px solid transparent;
+    padding: .4em;
+}
